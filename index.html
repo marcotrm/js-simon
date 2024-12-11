@@ -3,14 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Simon Says</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>RICORDA QUESTI NUMERI <br>
-    (HAI 15 SEC)</h1>
-    <div id="display-numbers"></div>
-    <div id="input-fields" class="hidden"></div>
+    <div class="container-big">
+        <h1 id="rember-first-number">RICORDA QUESTI NUMERI <br>
+        (IN 5 SEC)</h1>
+            <div id="timer">!</div>
+                <div id="display-numbers" class="timered-numbers"></div>
+                    <h2 id="remember" class="hidden">INSERISCI I NUMERI CHE TI RICORDI <br>
+                    (NON É IMPORTANTE L'ORDINE)</h2>
+                        <div id="input-fields" class="container row">
+                            <label for="input1"></label><input type="number" id="input1" class="hidden">
+                            <label for="input2"></label><input type="number" id="input2" class="hidden">
+                            <label for="input3"></label><input type="number" id="input3" class="hidden">
+                            <label for="input4"></label><input type="number" id="input4" class="hidden">
+                            <label for="input5"></label><input type="number" id="input5" class="hidden">
+                        </div>
+                            <div class="btn-container">
+                                 <button id="check-btn" class="verify">Verifica</button>
+                             </div>
+    </div>
+        <div id="result"></div>
     <script src="script.js"></script>
 </body>
 </html>
